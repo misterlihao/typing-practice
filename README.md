@@ -1,16 +1,18 @@
 # typing-practice
-typing practice  
-writen in python
 
-## usage
-First extract words from files:
+A typing practice tool in CLI.  
+Written in Python.
 
-```bash
-$ bash extract_words_in_files.sh FILE1 FILE2 > words.txt
+## Usage
+
+First, extract words from articles:
+
+```sh
+$ bash extract_words_in_files.sh ARTICLE.txt [ARTICLE.txt ...] > WORDS.txt
 ```
 
-Then run the python script whenever you want:
+Then run the Python script whenever you want:
 
-```bash
-$ python typing_linux.py
+```sh
+$ python typing_linux.py WORDS.txt [WORDS.txt ...]
 ```
