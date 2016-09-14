@@ -5,14 +5,14 @@ Written in Python.
 
 ## Usage
 
-First, extract words from files:
+First, extract words from articles:
 
 ```sh
-$ bash extract_words_in_files.sh FILE [FILE ...] > words.txt
+$ bash extract_words_in_files.sh ARTICLE.txt [ARTICLE.txt ...] > WORDS.txt
 ```
 
 Then run the Python script whenever you want:
 
 ```sh
-$ python typing_linux.py FILE [FILE ...]
+$ python typing_linux.py WORDS.txt [WORDS.txt ...]
 ```
