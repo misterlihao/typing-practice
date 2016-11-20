@@ -60,7 +60,7 @@ def get_all_words(checker):
 
 def pick_words(char_set):
     # XXX:this should be called only once for every char_set
-    words = get_all_words(lambda word: all((char in word) for char in char_set))
+    words = get_all_words(lambda word: all((char in char_set) for char in word))
     if not words:
         return '`'
 
