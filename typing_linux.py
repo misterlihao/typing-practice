@@ -64,7 +64,7 @@ def pick_words(char_set):
     if not words:
         return '`'
 
-    picked_words = random.sample(words, 5)
+    picked_words = random.sample(words, 5 if len(words)>=5 else len(words))
     return ' '.join(picked_words)
 
 def pick_words2(char_set):
@@ -73,7 +73,7 @@ def pick_words2(char_set):
     if not words:
         return '`'
 
-    picked_words = random.sample(words, 5)
+    picked_words = random.sample(words, 5 if len(words)>=5 else len(words))
     return ' '.join(picked_words)
 
 def generate_string(char_set):
